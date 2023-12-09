@@ -8,6 +8,10 @@ fastapi = "*"
 uvicorn = "*"
 httpx = "*"
 python-dotenv = "*"
+sqlalchemy = "*"
+databases = {extras = ["mysql"], version = "*"}
+alembic = "*"
+mysql-connector-python = "*"
 
 [dev-packages]
 ipykernel = "*"

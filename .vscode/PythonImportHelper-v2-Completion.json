@@ -1,5 +1,94 @@
 [
     {
+        "label": "fileConfig",
+        "importPath": "logging.config",
+        "description": "logging.config",
+        "isExtraImport": true,
+        "detail": "logging.config",
+        "documentation": {}
+    },
+    {
+        "label": "engine_from_config",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "pool",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "sys,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys.",
+        "description": "sys.",
+        "detail": "sys.",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "models.url_map_model",
+        "description": "models.url_map_model",
+        "isExtraImport": true,
+        "detail": "models.url_map_model",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -33,6 +122,30 @@
     },
     {
         "label": "Path",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -97,6 +210,22 @@
         "documentation": {}
     },
     {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
         "label": "RedirectResponse",
         "importPath": "fastapi.responses",
         "description": "fastapi.responses",
@@ -138,6 +267,14 @@
         "documentation": {}
     },
     {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
         "label": "hashlib",
         "kind": 6,
         "isExtraImport": true,
@@ -165,14 +302,6 @@
         "documentation": {}
     },
     {
-        "label": "CORSMiddleware",
-        "importPath": "fastapi.middleware.cors",
-        "description": "fastapi.middleware.cors",
-        "isExtraImport": true,
-        "detail": "fastapi.middleware.cors",
-        "documentation": {}
-    },
-    {
         "label": "url_shortener",
         "importPath": "api.endpoints",
         "description": "api.endpoints",
@@ -189,11 +318,56 @@
         "documentation": {}
     },
     {
+        "label": "run_migrations_offline",
+        "kind": 2,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "def run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation\n    we don't even need a DBAPI to be available.\n    Calls to context.execute() here emit the given string to the\n    script output.\n    \"\"\"\n    url = config.get_main_option(\"sqlalchemy.url\")",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_online",
+        "kind": 2,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "def run_migrations_online() -> None:\n    \"\"\"Run migrations in 'online' mode.\n    In this scenario we need to create an Engine\n    and associate a connection with the context.\n    \"\"\"\n    connectable = engine_from_config(\n        config.get_section(config.config_ini_section, {}),\n        prefix=\"sqlalchemy.\",\n        poolclass=pool.NullPool,\n    )",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "target_metadata",
+        "kind": 5,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "target_metadata = Base.metadata\n# this is the Alembic Config object, which provides\n# access to the values within the .ini file in use.\nconfig = context.config\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here\n# for 'autogenerate' support",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "config = context.config\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel\n# target_metadata = mymodel.Base.metadata\ntarget_metadata = None",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "target_metadata",
+        "kind": 5,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "target_metadata = None\n# other values from the config, defined by the needs of env.py,\n# can be acquired:\n# my_important_option = config.get_main_option(\"my_important_option\")\n# ... etc.\ndef run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
         "label": "router",
         "kind": 5,
         "importPath": "api.endpoints.music_generator",
         "description": "api.endpoints.music_generator",
-        "peekOfCode": "router = APIRouter()\nload_dotenv()\n# Spotify API credentials\nCLIENT_ID = os.getenv(\"SPOTIFY_CLIENT_ID\")\nCLIENT_SECRET = os.getenv(\"SPOTIFY_CLIENT_SECRET\")\nREDIRECT_URI = os.getenv(\"SPOTIFY_REDIRECT_URI\")\n# Spotify API endpoints\nSPOTIFY_AUTH_URL = \"https://accounts.spotify.com/authorize\"\nSPOTIFY_TOKEN_URL = \"https://accounts.spotify.com/api/token\"\nSPOTIFY_API_BASE_URL = \"https://api.spotify.com/v1\"",
+        "peekOfCode": "router = APIRouter()\nload_dotenv();\n# Spotify API credentials\nCLIENT_ID = os.getenv(\"SPOTIFY_CLIENT_ID\")\nCLIENT_SECRET = os.getenv(\"SPOTIFY_CLIENT_SECRET\")\nREDIRECT_URI = os.getenv(\"SPOTIFY_REDIRECT_URI\")\n# Spotify API endpoints\nSPOTIFY_AUTH_URL = \"https://accounts.spotify.com/authorize\"\nSPOTIFY_TOKEN_URL = \"https://accounts.spotify.com/api/token\"\nSPOTIFY_API_BASE_URL = \"https://api.spotify.com/v1\"",
         "detail": "api.endpoints.music_generator",
         "documentation": {}
     },
@@ -265,7 +439,7 @@
         "kind": 5,
         "importPath": "api.endpoints.url_shortener",
         "description": "api.endpoints.url_shortener",
-        "peekOfCode": "router = APIRouter()\nshortener = URLShortener()\n@router.post(\"/shorten-url/{long_url}\")\nasync def shorten_url(long_url: str):\n    result = shortener.shorten_url(long_url)\n    return {\"Short Url is \": result}\n@router.get(\"/get-original-url/{short_url:path}\")\nasync def get_original_url(short_url: str = Path(...)):\n    # Extract the short_key from the URL\n    short_key = short_url.split('/')[-1]",
+        "peekOfCode": "router = APIRouter()\nshortener = URLShortener()\n@router.post(\"/shorten-url/\")\nasync def shorten_url(long_url: str = Body(...)):\n    result = shortener.shorten_url(long_url)\n    return {\"Short Url is \": result}\n@router.get(\"/get-original-url/{short_url:path}\")\nasync def get_original_url(short_url: str = Path(...)):\n    # Extract the short_key from the URL\n    short_key = short_url.split('/')[-1]",
         "detail": "api.endpoints.url_shortener",
         "documentation": {}
     },
@@ -274,7 +448,25 @@
         "kind": 5,
         "importPath": "api.endpoints.url_shortener",
         "description": "api.endpoints.url_shortener",
-        "peekOfCode": "shortener = URLShortener()\n@router.post(\"/shorten-url/{long_url}\")\nasync def shorten_url(long_url: str):\n    result = shortener.shorten_url(long_url)\n    return {\"Short Url is \": result}\n@router.get(\"/get-original-url/{short_url:path}\")\nasync def get_original_url(short_url: str = Path(...)):\n    # Extract the short_key from the URL\n    short_key = short_url.split('/')[-1]\n    original_url = shortener.get_original_url(short_key)",
+        "peekOfCode": "shortener = URLShortener()\n@router.post(\"/shorten-url/\")\nasync def shorten_url(long_url: str = Body(...)):\n    result = shortener.shorten_url(long_url)\n    return {\"Short Url is \": result}\n@router.get(\"/get-original-url/{short_url:path}\")\nasync def get_original_url(short_url: str = Path(...)):\n    # Extract the short_key from the URL\n    short_key = short_url.split('/')[-1]\n    original_url = shortener.get_original_url(short_key)",
+        "detail": "api.endpoints.url_shortener",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "api.endpoints.url_shortener",
+        "description": "api.endpoints.url_shortener",
+        "peekOfCode": "app = FastAPI()\n# CORS middleware settings\norigins = [\n    \"http://localhost:8000\",  # Assuming your Vite React app runs on this port\n    # Add any other origins you want to whitelist\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,",
+        "detail": "api.endpoints.url_shortener",
+        "documentation": {}
+    },
+    {
+        "label": "origins",
+        "kind": 5,
+        "importPath": "api.endpoints.url_shortener",
+        "description": "api.endpoints.url_shortener",
+        "peekOfCode": "origins = [\n    \"http://localhost:8000\",  # Assuming your Vite React app runs on this port\n    # Add any other origins you want to whitelist\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],",
         "detail": "api.endpoints.url_shortener",
         "documentation": {}
     },
@@ -447,6 +639,42 @@
         "description": "client.node_modules.flatted.python.test",
         "peekOfCode": "oo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
         "detail": "client.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "URLMapping",
+        "kind": 6,
+        "importPath": "models.url_map_model",
+        "description": "models.url_map_model",
+        "peekOfCode": "class URLMapping(Base):\n    __tablename__ = \"url_mapping\"\n    id = Column(Integer, Sequence(\"url_id_seq\"), primary_key=True)\n    short_key = Column(String(6), unique=True, index=True)\n    original_url = Column(String(2048), index=True)\nDATABASE_URL = \"mysql+mysqlconnector://root:@localhost:3306/url_shortener\"\nengine = create_engine(DATABASE_URL)\nBase.metadata.create_all(bind=engine)",
+        "detail": "models.url_map_model",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "models.url_map_model",
+        "description": "models.url_map_model",
+        "peekOfCode": "Base = declarative_base()\nclass URLMapping(Base):\n    __tablename__ = \"url_mapping\"\n    id = Column(Integer, Sequence(\"url_id_seq\"), primary_key=True)\n    short_key = Column(String(6), unique=True, index=True)\n    original_url = Column(String(2048), index=True)\nDATABASE_URL = \"mysql+mysqlconnector://root:@localhost:3306/url_shortener\"\nengine = create_engine(DATABASE_URL)\nBase.metadata.create_all(bind=engine)",
+        "detail": "models.url_map_model",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "models.url_map_model",
+        "description": "models.url_map_model",
+        "peekOfCode": "DATABASE_URL = \"mysql+mysqlconnector://root:@localhost:3306/url_shortener\"\nengine = create_engine(DATABASE_URL)\nBase.metadata.create_all(bind=engine)",
+        "detail": "models.url_map_model",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "models.url_map_model",
+        "description": "models.url_map_model",
+        "peekOfCode": "engine = create_engine(DATABASE_URL)\nBase.metadata.create_all(bind=engine)",
+        "detail": "models.url_map_model",
         "documentation": {}
     },
     {

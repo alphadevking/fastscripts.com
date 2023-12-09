@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 router = APIRouter()
 
-load_dotenv()
+load_dotenv();
 
 # Spotify API credentials
 CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
